@@ -1,0 +1,276 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+	font-family: Helvetica;
+}
+
+body{
+	font-family: Helvetica;
+	font-size: 13px;
+	background: #f6f6f6;
+}
+ul {list-style:none;}
+input[type="submit"]:active{
+	box-shadow: inset 0px 0px 3px black;
+
+}
+/*-------------------------INDEX PAGE CSS STARTS---------------------------------*/
+.wrapper{
+	width:100%;
+}
+
+
+/*---------------------------Main HEADER WRAPPER START-------------------------------*/
+.header-wrapper{
+	width:100%;
+	background:white;
+	position: fixed;
+	top:0;
+	z-index: 10000;
+}
+.nav-container{
+	width:95%;
+	margin:0px auto;
+}
+
+.nav{
+	width:100%;
+	height:50px;
+}
+.nav ul li{
+	line-height: 50px;
+	float:left;
+	margin-right: 0px;
+	padding: 0px 10px;
+	cursor:pointer;
+	transition: all 200ms ease-in-out;
+}
+.nav ul li a{
+	color:#333;
+	text-decoration:none;
+}
+
+.nav ul li .fa-twitter{
+	margin-right: 4px;
+	color: #5ab2f5;
+	font-size: 22px;
+	position: relative;
+	top: 2px;
+}
+
+.nav-left{
+	width:50%;
+	float:left;
+}
+
+.nav-right{
+	width:50%;
+	float:right;
+}
+
+.nav-right ul {float:right;}
+
+/*---------------------------HEADER WRAPPER END-------------------------------*/
+
+.inner-wrapper{
+	width:100%;
+	margin-top: 55px;
+}
+
+.main-container{
+	width: 70%;
+	overflow: auto;
+	margin-top: 70px;
+}
+
+.content-left{
+	width: 50%;
+	float: left;
+	font-size: 20px;
+	color:#FF00FF;
+}
+
+.content-right{
+	width:40%;
+	float: right;
+}
+/*-------------------------LOGIN WRAPPPER START-----------------------*/
+.login-wrapper{
+	width:100%;
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #e7e7e7;
+	box-shadow: 0px 0px 10px #ccc;
+	margin: 10px;
+}
+
+.login-wrapper{
+	width: 70%;
+	float: left;
+}
+.login-wrapper ul li input[type="text"]{
+	width: 92%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin: 8px auto;
+	transition: all 100ms ease-in;
+}
+
+
+.login-wrapper ul li input[type="password"]{
+	width: 55%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin: 8px auto;
+	transition: all 100ms ease-in;
+	}
+
+.login-wrapper ul li input[type="submit"]{
+	margin-left: 10px;
+	border: 1px solid #333;
+	border-radius: 3px;
+	padding: 4px 15px;
+	background: #0a88e9;
+	color: white;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.login-wrapper ul li input[type="text"]:focus,.login-wrapper ul li input[type="password"]:focus{
+	box-shadow: 0px 0px 9px 0px #5ab2f580;
+}
+/*-------------------------LOGIN WRAPPPER ENDS-----------------------*/
+
+/*-------------------------Sign UP WRAPPPER START-----------------------*/
+
+.signup-wrapper{
+	width: 70%;
+	float: left;
+	margin: 30px 0px;
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #e7e7e7;
+	box-shadow: 0px 0px 10px #ccc;
+	margin: 10px;
+}
+
+.signup-div{
+	width:100%;
+	float:left;
+}
+
+.signup-div ul li input[type="email"],.signup-div ul li input[type="password"],.signup-div ul li input[type="text"]{
+	width:95%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin: 3px auto;
+	transition: all 100ms ease-in;
+}
+
+.signup-div ul li input[type="email"]:focus,.signup-div ul li input[type="password"]:focus,.signup-div ul li input[type="text"]:focus{
+	box-shadow: 0px 0px 9px 0px #5ab2f580;
+}
+
+.signup-wrapper h3{
+	font-weight: normal;
+	margin: 10px 0px;
+	color: #929292;
+}
+
+.signup-div ul li input[type="submit"]{
+	background:#fcd792;
+	border:1px solid orange;
+	padding: 4px 10px;
+	cursor:pointer;
+	float:right;
+	font-weight: bold;
+	border-radius: 4px;
+	margin-top: 4px;
+}
+
+.signup-div ul li input[type="submit"]:hover{
+	background:#ffa80699;
+}
+/*-------------------------Sign UP WRAPPPER ends-----------------------*/
+/*-------------------------INDEX PAGE CSS ENDS---------------------------------*/
+.front-img img{
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+	height: 100%;
+	margin-top: -20px;
+}
+
+.error-banner{
+	width: 50%;
+	height: 60px;
+	background: #fff;
+ 	position: absolute;
+	position: fixed;
+	left: 18%;
+	right: 18%;
+	top: 4.5%;
+	z-index: 1;
+	border: 1px solid #dbdbdb;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	box-shadow: 0px 0px 11px -1px #5f5f5f;
+}
+.error-banner-inner{
+	font-size: 14px;
+	padding: 10px;
+	margin: 10px auto;
+	color: #898989;
+}
+#errorMsg {
+	text-align: center;
+}
+.loading-div{
+	background: #fff;
+	width: 95%;
+	border: 1px solid #e3e3e3;
+	border-top: none;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.loading-div img{
+	width: 35px;
+	padding: 5px;
+}
+
+.span-pe-error{
+	overflow: hidden;
+	padding: 10px;
+	border: 1px dashed #d89797;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #a75858;
+ 	max-width: 200px;
+ 	min-width: 60px;
+ 	margin:0px;
+}
+
+.error-li {
+	margin:20px 0px;
+}
+
+.signup-div ul li {
+	list-style: none;
+	overflow:hidden;
+}
+/*-------------------------HOME PAGE---------------------------------*/
+.home-img img{
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+	height: 100%;
+	margin-top: -20px;
+
+}
+
